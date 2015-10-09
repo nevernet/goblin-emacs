@@ -36,8 +36,8 @@
 (menu-bar-mode -1)
 
 ;; hidden scroll bar
-(set-scroll-bar-mode nil)
-(mouse-wheel-mode 1)
+;; (set-scroll-bar-mode nil)
+;; (mouse-wheel-mode 1)
 
 ;; the blinking cursor is nothing, but an annoyance
 (blink-cursor-mode -1)
@@ -72,7 +72,7 @@
                                           "%b"))))
 
 ;; use solarized as the default theme
-(load-theme 'solarized-dark t)
+;; (load-theme 'solarized-dark t)
 
 ;; font
 ;; set font
@@ -83,18 +83,16 @@
   )
  ((string-equal system-type "darwin")   ; Mac OS X
   (progn
-    (add-to-list 'default-frame-alist '(font . "Consolas-14"))
-    (set-fontset-font "fontset-default"
-	 'gb18030 '("Microsoft YaHei" . "unicode-bmp"))
+    (add-to-list 'default-frame-alist '(font . "Monaco-14"))
     )
   )
  ((string-equal system-type "gnu/linux") ; linux
   (progn
-    (add-to-list 'default-frame-alist '(font . "Courier\ New-13")) )
-    (set-fontset-font "fontset-default"
-	 'gb18030 '("Microsoft YaHei" . "unicode-bmp"))
+    (add-to-list 'default-frame-alist '(font . "Courier\ New-13"))
+    )
   )
  )
+
 
 (provide 'goblin-ui)
 ;;; goblin-ui.el ends here
