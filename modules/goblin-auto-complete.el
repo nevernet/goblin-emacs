@@ -39,10 +39,10 @@
 (set-face-background 'ac-selection-face "steelblue")
 
 (setq ac-auto-show-menu t
-        ac-auto-start 3
+        ac-auto-start 1
         ac-dwim t
         ac-candidate-limit ac-menu-height
-        ac-quick-help-delay .5
+        ac-quick-help-delay .1
         ac-disable-faces nil)
 
 (provide 'goblin-auto-complete)
